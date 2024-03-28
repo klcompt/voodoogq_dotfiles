@@ -258,7 +258,7 @@
   "debug.node.autoAttach": "on",
   "todo-tree.highlights.enabled": true,
   "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "Palenight Italic",
+  "workbench.colorTheme": "Dark Purple Flat",
   "remote.SSH.defaultExtensions": [
     "Python"
   ],

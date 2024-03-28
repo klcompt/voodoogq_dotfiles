@@ -6,6 +6,7 @@ tap 'homebrew/cask-versions'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'stripe/stripe-cli'
 tap 'puma/puma'
+tap 'ynqa/tap'
 tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 
 # Core
@@ -46,6 +47,7 @@ brew 'tmuxinator' # Tmux profiles
 brew 'vault' # Vault
 brew 'yamllint' # YAML linter
 brew 'wget' # Wget
+brew 'jnv' # JSON navigator
 brew 'zsh' # Zsh
 brew 'kjctl' # KJCTL
 

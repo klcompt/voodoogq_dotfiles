@@ -12,6 +12,7 @@ alias git='hub'
 alias gitup="git push --set-upstream origin"
 alias grep='grep --color'
 alias help='man'
+alias json="jnv"
 alias ls="eza --long --header --git"
 alias la="ls -A"
 alias ldot='ls -ld .*'
