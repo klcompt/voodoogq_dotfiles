@@ -1,4 +1,6 @@
 #!/bin/sh
+# Initialize Oh My ZSH
+# Run ./bin/install when complete
 
 echo "Installing Oh My ZSH. Run ./install when done..."
 

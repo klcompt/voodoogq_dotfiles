@@ -1,18 +1,19 @@
 #!/bin/sh
 set -e
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ROOT_DIR=$SCRIPT_DIR/..
+# Local directory variables
+BIN=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+ROOT=$BIN/..
 
 echo "Installing..."
 
-echo "Checking Command Line Tools for Xcode"
 # Only run if the tools are not installed yet
 # To check that try to print the SDK path
+echo "Checking Command Line Tools for Xcode"
 xcode-select -p &> /dev/null
 if [ $? -ne 0 ]; then
   echo "Command Line Tools for Xcode not found. Installing from softwareupdate…"
-# This temporary file prompts the 'softwareupdate' utility to list the Command Line Tools
+  # This temporary file prompts the 'softwareupdate' utility to list the Command Line Tools
   touch /tmp/.com.apple.dt.CommandLineTools.installondemand.in-progress;
   PROD=$(softwareupdate -l | grep "\*.*Command Line" | tail -n 1 | sed 's/^[^C]* //')
   softwareupdate -i "$PROD" --verbose;
@@ -28,33 +29,28 @@ if test ! $(which brew); then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
-# Update Homebrew recipes
+# Update Homebrew
 brew update
 
 # Brew install
-chmod a+x $ROOT_DIR/brew
-source $ROOT_DIR/brew
+chmod a+x $ROOT/brew
+source $ROOT/brew
 
 # ASDF Dir Env
 asdf plugin-add direnv
 asdf direnv setup --shell zsh --version latest
 
-# Link configs
-chmod a+x $SCRIPT_DIR/link
-$SCRIPT_DIR/link
-
 # Get cURL certs in the right place
 mkdir -p $HOME/.certs
 wget -O $HOME/.certs/cacert.pem https://curl.se/ca/cacert.pem
 
-# Create system directories
-mkdir -p $HOME/.tmux/plugins # Tmux Plugin Manager
-# Create a projects directories
-mkdir -p $HOME/Code/github.com/voodooGQ # Personal
+# Link configs
+chmod a+x $BIN/link
+source $BIN/link
 
-# Clone Github repositories
-chmod a+x $SCRIPT_DIR/clone
-$SCRIPT_DIR/clone
+# Clone Repositories
+chmod a+x $BIN/clone
+$BIN/clone
 
 # Set macOS preferences
 source ~/.macos

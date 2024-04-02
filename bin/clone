@@ -1,4 +1,5 @@
 #!/bin/zsh
+# Clone all the repositories I need to work with or setup my environment
 
 echo "Cloning repositories..."
 
@@ -19,15 +20,16 @@ function clone() {
 
 # System
 clone tmux-plugins/tpm $HOME/.tmux/plugins/tpm
+
 # ZSH
 clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
 clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
 clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
+clone voodooGQ/notes $HOME/Documents/Notes
 
 # Personal
 clone voodooGQ/dotfiles $PERSONAL/dotfiles
-clone voodooGQ/notes $HOME/Documents/Notes
 
 # Kajabi
 clone Kajabi/kajabi-products $KAJABI/kajabi-products
