@@ -44,7 +44,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
-source ~/.zsh_path
+source ~/.zsh_custom/.path
 
 # Secrets
 if [[ -a ~/.secrets ]]; then

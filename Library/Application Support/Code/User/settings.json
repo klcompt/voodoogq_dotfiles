@@ -58,11 +58,7 @@
       "**/runway.yaml",
       "**/runway.yml"
     ],
-    "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
-    "file:///home/ssmith/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
-      "**/runway.yaml",
-      "**/runway.yml"
-    ]
+    "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "atlascode.jira.workingProject": {
     "id": "10321",
