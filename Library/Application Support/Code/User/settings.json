@@ -319,5 +319,6 @@
   "vim.highlightedyank.enable": true,
   "vim.vimrc.enable": true,
   "redhat.telemetry.enabled": false,
-  "application.shellEnvironmentResolutionTimeout": 25
+  "application.shellEnvironmentResolutionTimeout": 25,
+  "gitTreeCompare.diffMode": "merge"
 }
