@@ -45,7 +45,6 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.zsh_path
-source ~/.local/bin/aws_zsh_completer
 
 # Secrets
 if [[ -a ~/.secrets ]]; then
