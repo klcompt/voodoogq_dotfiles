@@ -32,10 +32,6 @@
   ],
   "editor.rulers": [
     {
-      "column": 80,
-      "color": "#573140"
-    },
-    {
       "column": 100,
       "color": "#452505"
     }
@@ -44,31 +40,15 @@
   "[typescript]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "atlascode.jira.workingSite": {
-    "baseUrlSuffix": "atlassian.net"
-  },
   "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.tslint": "explicit",
     "source.fixAll.prettier": "explicit"
   },
-  "yaml.schemas": {
-    "file:///home/shane/.vscode/extensions/itprokyle.vscode-runway-0.1.0/schemas/runway.schema.json": [
-      "**/runway.yaml",
-      "**/runway.yml"
-    ],
-    "file:///home/shane/.vscode/extensions/atlassian.atlascode-2.4.9/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
-  },
-  "atlascode.jira.workingProject": {
-    "id": "10321",
-    "name": "Onica Start",
-    "key": "OS"
-  },
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "workbench.settings.enableNaturalLanguageSearch": false,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
+  "telemetry.telemetryLevel": "off",
   "files.trimTrailingWhitespace": true,
   "javascript.preferences.quoteStyle": "single",
   "dash.languageIdToDocsetMap": {
@@ -91,7 +71,6 @@
   "auto-close-tag.SublimeText3Mode": true,
   "markdown.preview.breaks": true,
   "editor.fontFamily": "Fira Code",
-  // "editor.fontFamily":"'Hack Mono', 'monospace', monospace, 'Droid Sans Fallback'",
   "editor.fontLigatures": true,
   "editor.fontWeight": "400",
   "editor.renderWhitespace": "boundary",
@@ -104,12 +83,12 @@
   "workbench.editor.tabSizing": "shrink",
   "zenMode.hideLineNumbers": false,
   "window.menuBarVisibility": "toggle",
-  "debug.inlineValues": true,
+  "debug.inlineValues": "on",
   "debug.toolBarLocation": "docked",
   "extensions.closeExtensionDetailsOnViewChange": true,
   "terminal.explorerKind": "external",
   "terminal.external.linuxExec": "tilix",
-  "extensions.showRecommendationsOnlyOnDemand": true,
+  "extensions.ignoreRecommendations": false,
   "peacock.surpriseMeFromFavoritesOnly": true,
   "editor.suggestSelection": "first",
   "python.jediEnabled": false,
@@ -117,9 +96,6 @@
   "testExplorer.addToEditorContextMenu": true,
   "testExplorer.onStart": "retire",
   "testExplorer.showOnRun": true,
-  "mochaExplorer.files": "test/**/*.test.ts",
-  "mochaExplorer.require": "ts-node/register",
-  "mochaExplorer.nodePath": "/home/shane/.nvm/versions/node/v10.10.0/bin/node",
   "cSpell.userWords": [
     "Arns",
     "Bibimbap",
@@ -201,7 +177,6 @@
   ],
   "explorer.openEditors.visible": 5,
   "explorer.autoReveal": false,
-  // Custom tags for the parser to use
   "yaml.customTags": [
     "!And",
     "!If",
@@ -232,32 +207,24 @@
     "!Split sequence",
     "!vault"
   ],
-  // Enable/disable default YAML formatter (requires restart)
   "yaml.format.enable": true,
   "diffEditor.renderSideBySide": false,
   "vs-kubernetes": {
-    "vs-kubernetes.kubectl-path": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-    "vs-kubernetes.helm-path": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vs-kubernetes.draft-path": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft",
-    "vs-kubernetes.kubectl-path.linux": "/home/shane/.vs-kubernetes/tools/kubectl/kubectl",
-    "vs-kubernetes.minikube-path.linux": "/home/shane/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-    "vs-kubernetes.helm-path.linux": "/home/shane/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vs-kubernetes.draft-path.linux": "/home/shane/.vs-kubernetes/tools/draft/linux-amd64/draft",
+    "vs-kubernetes.kubectl-path": "/home/shanesmith/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path": "/home/shanesmith/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path": "/home/shanesmith/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path": "/home/shanesmith/.vs-kubernetes/tools/draft/linux-amd64/draft",
+    "vs-kubernetes.kubectl-path.linux": "/home/shanesmith/.vs-kubernetes/tools/kubectl/kubectl",
+    "vs-kubernetes.minikube-path.linux": "/home/shanesmith/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/shanesmith/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/shanesmith/.vs-kubernetes/tools/draft/linux-amd64/draft",
     "vscode-kubernetes.kubectl-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.helm-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/helm/darwin-amd64/helm",
     "vscode-kubernetes.minikube-path-mac": "/Users/shanesmith/.vs-kubernetes/tools/minikube/darwin-amd64/minikube"
   },
-  "aws.samcli.location": "/home/shane/.local/bin/sam",
   "python.linting.pylintUseMinimalCheckers": false,
   "smartsemicolon.autoLineChange": false,
   "debug.node.autoAttach": "on",
-  "todo-tree.highlights.enabled": true,
-  "todo-tree.tree.showScanModeButton": false,
-  "workbench.colorTheme": "Dark Purple Flat",
-  "remote.SSH.defaultExtensions": [
-    "Python"
-  ],
   "editor.tabSize": 2,
   "editor.autoClosingOvertype": "always",
   "python.languageServer": "Microsoft",
@@ -275,7 +242,6 @@
   "ruby.format": "rubocop",
   "python.showStartPage": false,
   "tabnine.experimentalAutoImports": true, // use rubocop for formatting
-  "workbench.iconTheme": "material-icon-theme",
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
@@ -316,5 +282,6 @@
   "vim.vimrc.enable": true,
   "redhat.telemetry.enabled": false,
   "application.shellEnvironmentResolutionTimeout": 25,
-  "gitTreeCompare.diffMode": "merge"
+  "workbench.colorTheme": "Dark Purple Flat",
+  "workbench.iconTheme": "material-icon-theme",
 }

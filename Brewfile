@@ -163,3 +163,5 @@ vscode 'solomonkinard.git-blame' # Git Blame
 vscode 'vortizhe.simple-ruby-erb' # Ruby ERB
 vscode 'vscodevim.vim' # Vim
 vscode 'yoavbls.pretty-ts-errors' # Pretty TS errors
+vscode 'jannisberndt.dark-orange' # Dark Orange theme
+vscode 'pkief.material-icon-theme' # Material icons

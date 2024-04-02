@@ -2262,7 +2262,8 @@
         "id": "1278508951",
         "version": "2.14.5"
       },
-      "Noizio - Calm, Meditate, Sleep": null
+      "Noizio - Calm, Meditate, Sleep": null,
+      "Dropover - Easier Drag & Drop": null
     },
     "vscode": {
       "deerawan.vscode-dash": null,
@@ -2284,7 +2285,9 @@
       "nguyenngoclong.asdf": null,
       "vortizhe.simple-ruby-erb": null,
       "irongeek.vscode-env": null,
-      "solomonkinard.git-blame": null
+      "solomonkinard.git-blame": null,
+      "jannisberndt.dark-orange": null,
+      "equinusocio.vsc-material-theme-icons": null
     }
   },
   "system": {
