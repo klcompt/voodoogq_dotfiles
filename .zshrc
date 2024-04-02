@@ -36,16 +36,11 @@ plugins=(
   vi-mode
   vundle
   zsh-asdf-prompt
-  # Recent
   1password
   zsh-256color
   zsh-asdf-direnv
   zsh-ask
 )
-
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-eval `gdircolors --sh ~/.gruvbox.dircolors`
 
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
