@@ -1,5 +1,5 @@
 #!/bin/bash
-# Check if an application is installed
+# Check if an application is installed already on MacOS
 
 if mdfind "kMDItemKind == 'Application'" | grep "$1" > /dev/null 2>&1; then
     echo "Found $1 in Applications"
