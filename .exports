@@ -13,6 +13,7 @@ export HOMEBREW_NO_ENV_HINTS=1 # Turn off environment hints with Homebrew comman
 export LANG=en_US.UTF-8 # Default Language
 export MANPAGER=$PAGER # Man Pager
 export PAGER=less # Default Pager
+export PNPM_HOME=$HOME/Library/pnpm # Path to pnpm
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock # SSH Auth Socket
 export TERMINAL=iTerm2 # Default Terminal
 export VISUAL=$(which vim) # Default Visual Editor

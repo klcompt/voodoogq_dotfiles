@@ -29,30 +29,26 @@ bashcompinit
 
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 
+# Make a new TMUX session named 'main' if it hasn't already been loaded
 if [[ $TMUX == '' ]]; then
   tmux new-session -A -s main
-  # tmux -CC
 fi
-
-# ASDF
-fpath=(${ASDF_DIR}/completions $fpath)
 
 # McFly
 eval "$(mcfly init zsh)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+# ASDF
+fpath=(${ASDF_DIR}/completions $fpath)
 source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"
-export PATH="/usr/local/opt/postgresql@12/bin:$PATH"
 source /usr/local/opt/asdf/libexec/asdf.sh
 
-# pnpm
-export PNPM_HOME="/Users/shanesmith/Library/pnpm"
+# PNPM
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Powerlevel10k instant prompt. Should stay close to the bottom of ~/.zshrc.
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
