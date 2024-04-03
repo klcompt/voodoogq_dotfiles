@@ -11,7 +11,7 @@ source $LOCAL_BIN/ssh_agent
 source $LOCAL_BIN/bash_comp
 source $LOCAL_BIN/fpath_init
 source $LOCAL_BIN/tmux_session_init
-source $LOCAL_BIN/mcfly_init
+eval "$(mcfly init zsh)"
 source $LOCAL_BIN/asdf_init
 source $LOCAL_BIN/pnpm_init
 source $LOCAL_BIN/p10k/load
