@@ -28,7 +28,6 @@ FILES=(
   ".vimrc"
   ".vimrc.bundles"
   ".vimrc_background"
-  ".vscode"
   ".yamllint"
   ".zsh_custom"
   ".zshrc"

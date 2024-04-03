@@ -24,9 +24,11 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 ssh-add -l > /dev/null || ssh-add
 
+# Bash Completion
 autoload bashcompinit
 bashcompinit
 
+# fpath
 fpath=(/usr/local/share/zsh/site-functions $fpath)
 
 # Make a new TMUX session named 'main' if it hasn't already been loaded

@@ -5,7 +5,7 @@
         "revision": "0d9aa32ff2053891983455afcb2b29fd77933a7c"
       },
       "homebrew/bundle": {
-        "revision": "984473ebdec2b88387aeff280a0ba155f0562ba3"
+        "revision": "05e54ee3370fc118496ec6e3019527bf170c036c"
       },
       "homebrew/cask": {
         "revision": "60abcf77d846df55b35d6d0c2abe2a564f50e2a4"
@@ -14,7 +14,7 @@
         "revision": "58fefb47478f75c262e2efc369e84021f6612fc8"
       },
       "homebrew/cask-versions": {
-        "revision": "7284e67f1f70f1765e3a08cc584b293a2b9c17bf"
+        "revision": "308e68ee5d75edb3642d1706399337d06b5e9773"
       },
       "nicoverbruggen/cask": {
         "revision": "bcb8aa7a0487ea7a9d01592667d1fe6e1024d833"
@@ -2287,7 +2287,8 @@
       "irongeek.vscode-env": null,
       "solomonkinard.git-blame": null,
       "jannisberndt.dark-orange": null,
-      "equinusocio.vsc-material-theme-icons": null
+      "equinusocio.vsc-material-theme-icons": null,
+      "pkief.material-icon-theme": null
     }
   },
   "system": {

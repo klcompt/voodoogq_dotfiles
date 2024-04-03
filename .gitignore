@@ -10,4 +10,4 @@
 .vim/view/*
 zsh/.oh-my-zsh
 .netrwhist
-!.vscode
+.ruby-lsp
