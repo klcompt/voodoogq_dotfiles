@@ -1,0 +1,32 @@
+plugins=(
+  colored-man-pages
+  colorize
+  docker
+  docker-compose
+  dotenv
+  gem
+  git
+  httpie
+  jsontools
+  kubectl
+  node
+  npm
+  pip
+  pyenv
+  pylint
+  python
+  postgres
+  rake
+  rbenv
+  ruby
+  sudo
+  tmux
+  tmuxinator
+  vi-mode
+  vundle
+  zsh-asdf-prompt
+  1password
+  zsh-256color
+  zsh-asdf-direnv
+  zsh-ask
+)

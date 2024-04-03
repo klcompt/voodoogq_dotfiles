@@ -5,43 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-ZSH_DISABLE_COMPFIX=true
 
 source ~/.exports
-
-plugins=(
-  colored-man-pages
-  colorize
-  docker
-  docker-compose
-  dotenv
-  gem
-  git
-  httpie
-  jsontools
-  kubectl
-  node
-  npm
-  pip
-  pyenv
-  pylint
-  python
-  postgres
-  rake
-  rbenv
-  ruby
-  sudo
-  tmux
-  tmuxinator
-  vi-mode
-  vundle
-  zsh-asdf-prompt
-  1password
-  zsh-256color
-  zsh-asdf-direnv
-  zsh-ask
-)
-
+source $ZSH_CUSTOM/.plugins
 source $ZSH/oh-my-zsh.sh
 source ~/.aliases
 source ~/.zsh/.path
