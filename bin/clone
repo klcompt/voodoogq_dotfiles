@@ -32,14 +32,15 @@ clone voodooGQ/notes $HOME/Documents/Notes
 clone voodooGQ/dotfiles $PERSONAL/dotfiles
 
 # Kajabi
+clone Kajabi/ipa-interviews $KAJABI/ipa-interviews
+clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
 clone Kajabi/kajabi-products $KAJABI/kajabi-products
+clone Kajabi/kjctl $KAJABI/kjctl
+clone Kajabi/kubernetes $KAJABI/kubernetes
+clone Kajabi/pine $KAJABI/pine
 clone Kajabi/radiator $KAJABI/radiator
 clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
 clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
-clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
-clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
 clone Kajabi/sage-lib $KAJABI/sage-lib
-clone Kajabi/pine $KAJABI/pine
-clone Kajabi/kubernetes $KAJABI/kubernetes
+clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
 clone Kajabi/terraform $KAJABI/terraform
-clone Kajabi/kjctl $KAJABI/kjctl
