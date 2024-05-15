@@ -5,7 +5,7 @@ echo "Cloning repositories..."
 
 ROOT=$HOME
 CODE=$ROOT/Code
-PERSONAL=$CODE/github.com/voodooGQ
+PERSONAL=$CODE/github.com/klcompt
 KAJABI=$CODE/github.com/Kajabi
 
 function clone() {
@@ -26,21 +26,29 @@ clone CurryEleison/zsh-asdf-prompt $ZSH_CUSTOM/plugins/zsh-asdf-prompt
 clone chrissicool/zsh-256color $ZSH_CUSTOM/plugins/zsh-256color
 clone Licheam/zsh-ask $ZSH_CUSTOM/plugins/zsh-ask
 clone redxtech/zsh-asdf-direnv $ZSH_CUSTOM/plugins/zsh-asdf-direnv
-clone voodooGQ/notes $HOME/Documents/Notes
+clone klcompt/notes $HOME/Documents/Notes
 
 # Personal
-clone voodooGQ/dotfiles $PERSONAL/dotfiles
+clone klcompt/voodoogq_dotfiles $PERSONAL/dotfiles
 
 # Kajabi
-clone Kajabi/ipa-interviews $KAJABI/ipa-interviews
-clone Kajabi/js-mono-automation-project $KAJABI/js-mono-automation-project
 clone Kajabi/kajabi-products $KAJABI/kajabi-products
+clone Kajabi/kj_notify $KAJABI/kj_notify
+clone Kajabi/cloudflare_api_client $KAJABI/cloudflare_api_client
+clone Kajabi/theme-branded-app $KAJABI/theme-branded-app
+clone Kajabi/copy-magic-service $KAJABI/copy-magic-service
+clone Kajabi/developer-platform $KAJABI/developer-platform
+clone Kajabi/mobile_admin_api $KAJABI/mobile_admin_api
+clone Kajabi/terraform $KAJABI/terraform
+clone Kajabi/terraform-auth0 $KAJABI/terraform-auth0
+clone Kajabi/sage-lib $KAJABI/sage-lib
+clone Kajabi/kajabi-communities $KAJABI/kajabi-communities
+clone Kajabi/Kajabi-Dash-App-iOS $KAJABI/Kajabi-Dash-App-iOS
+clone Kajabi/Kajabi-Dash-App-Android $KAJABI/Kajabi-Dash-App-Android
 clone Kajabi/kjctl $KAJABI/kjctl
 clone Kajabi/kubernetes $KAJABI/kubernetes
-clone Kajabi/pine $KAJABI/pine
-clone Kajabi/radiator $KAJABI/radiator
-clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
-clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
-clone Kajabi/sage-lib $KAJABI/sage-lib
-clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless
-clone Kajabi/terraform $KAJABI/terraform
+#clone Kajabi/pine $KAJABI/pine
+#clone Kajabi/radiator $KAJABI/radiator
+#clone Kajabi/radiator-manifests $KAJABI/radiator-manifests
+#clone Kajabi/radiator-techdocs-action $KAJABI/radiator-techdocs-action
+#clone Kajabi/standard-model-serverless $KAJABI/standard-model-serverless

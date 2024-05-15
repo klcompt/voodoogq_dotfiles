@@ -4,8 +4,8 @@
 Mac OS configuration files
 
 ```shell
-git clone git@github.com/voodooGQ/dotfiles.git ~/Code/github.com/voodooGQ/dotfiles
-cd ~/Code/github.com/voodooGQ
+git clone git@github.com/klcompt/voodoogq_dotfiles.git ~/Code/github.com/klcompt/dotfiles
+cd ~/Code/github.com/klcompt
 ./bin/init
 # After Oh My ZSH install
 ./bin/install
