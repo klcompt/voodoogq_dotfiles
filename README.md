@@ -7,6 +7,13 @@ Mac OS configuration files
 git clone git@github.com/klcompt/voodoogq_dotfiles.git ~/Code/github.com/klcompt/dotfiles
 cd ~/Code/github.com/klcompt
 #!! Checkout desired branch (ex. git checkout kajabi)
+#!! ensure valid ssh key is set up for github.com on your box
+#   1  ssh-keygen -t ed25519 -C "githubuser@email.here"
+#   2  eval "$(ssh-agent -s)"
+#   3  touch ~/.ssh/config
+#   4  vim ~/.ssh/config
+#   5  ssh-add ~/.ssh/id_ed25519
+#   6  cat ~/.ssh/id_ed25519.pub
 ./bin/init
 # After Oh My ZSH install
 ./bin/install
