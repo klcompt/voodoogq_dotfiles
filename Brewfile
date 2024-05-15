@@ -31,7 +31,7 @@ brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
 brew 'kjctl' # KJCTL
 brew 'kustomize' # Kustomize
-brew 'mas' # Mac App Store CLI
+#brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
 brew 'minikube' # Minikube
 brew 'mkcert' # Local SSL
@@ -134,13 +134,13 @@ cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless alr
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
 # mas 'iBar-Menubar icon control tool', id: '-2146090692' # Menubar icon control
-mas 'Boop', id: 1518425043 # Various developer tools
-mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
-mas 'ColorSlurp', id: 1287239339 # Color picker
-mas 'Dropover - Easier Drag & Drop', id: 1355679052 # Easier Drag & Drop
-mas 'Magnet', id: 441258766 # Window manager
-mas 'Noizio - Calm, Meditate, Sleep', id: 928871589 # White Noise
-mas 'Trello', id: 1278508951 # Trello
+# mas 'Boop', id: 1518425043 # Various developer tools
+# mas 'Clipboard Manager - PastePal', id: 1503446680 # Clipboard manager
+# mas 'ColorSlurp', id: 1287239339 # Color picker
+# mas 'Dropover - Easier Drag & Drop', id: 1355679052 # Easier Drag & Drop
+# mas 'Magnet', id: 441258766 # Window manager
+# mas 'Noizio - Calm, Meditate, Sleep', id: 928871589 # White Noise
+# mas 'Trello', id: 1278508951 # Trello
 
 # VSCode extensions
 vscode 'britesnow.vscode-toggle-quotes' # Toggle quotes
@@ -148,8 +148,8 @@ vscode 'christian-kohler.npm-intellisense' # NPM Intellisense
 vscode 'dbaeumer.vscode-eslint' # ESLint
 vscode 'deerawan.vscode-dash' # Dash
 vscode 'esbenp.prettier-vscode' # Prettier
-vscode 'github.copilot' # Copilot
-vscode 'github.copilot-chat' # Copilot chat
+#vscode 'github.copilot' # Copilot
+#vscode 'github.copilot-chat' # Copilot chat
 vscode 'golang.go' # Go
 vscode 'irongeek.vscode-env' # .env
 vscode 'ivhernandez.vscode-plist' # PList Editor
