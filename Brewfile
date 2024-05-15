@@ -2,8 +2,11 @@
 tap 'argoproj/tap'
 tap 'homebrew/bundle'
 tap 'homebrew/cask-fonts'
-tap 'homebrew/cask-versions'
-tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
+# Apparently deprecated
+# tap 'homebrew/cask-versions'
+
+# Had an issue tapping this kjctl cask 
+# tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'puma/puma'
 tap 'stripe/stripe-cli'
@@ -29,7 +32,7 @@ brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
-brew 'kjctl' # KJCTL
+# brew 'kjctl' # KJCTL
 brew 'kustomize' # Kustomize
 #brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
@@ -124,12 +127,14 @@ cask 'numi' # Calculator
 cask 'obsidian' # Obsidian
 cask 'plex' # Plex
 cask 'shottr' # Screenshot
-cask 'slack' unless system ".local/bin/installed Slack.app" # Slack unless already installed
+# Already installed
+# cask 'slack' unless system ".local/bin/installed Slack.app" # Slack unless already installed
 cask 'spotify' # Spotify
 cask 'the-unarchiver' # Unarchiver
 cask 'visual-studio-code' # VSCode
 cask 'wireshark'# Wireshark
-cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless already installed
+# Already installed by administrator
+# cask 'zoom' unless system ".local/bin/installed 'zoom.us.app'" # Zoom unless already installed
 
 # Mac Apple Store
 # https://github.com/mas-cli/mas/issues/498
