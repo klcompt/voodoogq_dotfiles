@@ -3,7 +3,8 @@ set -e
 
 # Local directory variables
 BIN=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-ROOT=$BIN/..
+#ROOT=$BIN/.. # found I needed to change when running `> ./bin/install` in terminal klcompt 24-05-15
+ROOT=$BIN
 
 echo "Installing..."
 
