@@ -2,7 +2,9 @@ LOCAL_BIN=$HOME/.local/bin
 
 source $LOCAL_BIN/p10k/init
 source $HOME/.exports
-source $ZSH_CUSTOM/.plugins
+# Seems to be plugins not .plugins
+# source $ZSH_CUSTOM/.plugins
+source $ZSH_CUSTOM/plugins
 source $ZSH/oh-my-zsh.sh
 source $HOME/.aliases
 source $HOME/.zsh/.path
@@ -15,3 +17,4 @@ eval "$(mcfly init zsh)"
 source $LOCAL_BIN/asdf_init
 source $LOCAL_BIN/pnpm_init
 source $LOCAL_BIN/p10k/load
+source "${XDG_CONFIG_HOME:-$HOME/.config}/asdf-direnv/zshrc"

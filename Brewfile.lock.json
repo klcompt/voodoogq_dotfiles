@@ -23,7 +23,7 @@
         "revision": "4da4eb99a8bb80da6a18f0a116d1af8b587419a8"
       },
       "kajabi/kjctl": {
-        "revision": "e299b7066a0f758ee3407be57e7a056f0a126cde",
+        "revision": "4e83f31fd6cd183f5a7e76e2bfda8540ed089741",
         "options": {
           "clone_target": "git@github.com:Kajabi/kjctl.git"
         }
@@ -1347,7 +1347,7 @@
         }
       },
       "kjctl": {
-        "version": "1.39.0",
+        "version": "1.43.0",
         "bottle": false
       },
       "glow": {

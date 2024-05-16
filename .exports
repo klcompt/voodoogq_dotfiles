@@ -1,6 +1,8 @@
-export SYSTEM_NAME="smitty" # Name of the System
-export ASDF_DIR=/usr/local/opt/asdf/libexec # Path to asdf
+export SYSTEM_NAME="kevin.compton" # Name of the System
+# export ASDF_DIR=/usr/local/opt/asdf/libexec # Path to asdf
+export ASDF_DIR=/opt/homebrew/opt/asdf/libexec # Path to asdf
 export AWS_REGION=us-east-1 # Default AWS Region
+# TODO Kevin 24-05-16 this doesn't exist for me .. not sure if it is causing issues yet
 export BASE16_SHELL=$HOME/.config/base16-shell/ # Base16 Shell
 export BROWSER='/usr/bin/open -a "/Applications/Brave Browser.app"' # Default Browser
 export COMPLETION_WAITING_DOTS="true" # Show completion dots

@@ -5,8 +5,7 @@ tap 'homebrew/cask-fonts'
 # Apparently deprecated
 # tap 'homebrew/cask-versions'
 
-# Had an issue tapping this kjctl cask 
-# tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
+tap 'kajabi/kjctl', 'git@github.com:Kajabi/kjctl.git'
 tap 'nicoverbruggen/homebrew-cask'
 tap 'puma/puma'
 tap 'stripe/stripe-cli'
@@ -32,7 +31,7 @@ brew 'htop' # Better top
 brew 'imagemagick' # ImageMagick
 brew 'jnv' # JSON navigator
 brew 'jq' # JSON processor
-# brew 'kjctl' # KJCTL
+brew 'kjctl' # KJCTL
 brew 'kustomize' # Kustomize
 #brew 'mas' # Mac App Store CLI
 brew 'mcfly' # Better history
