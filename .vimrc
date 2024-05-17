@@ -16,7 +16,7 @@ endif
 set guicursor=
 au BufWritePost * :silent! :syntax sync fromstart<cr>:redraw!<cr>
 " Map leader to space
-let mapleader = " "
+let mapleader = ","
 " Don't wrap lines
 set linebreak
 " Display extra whitespace
@@ -34,6 +34,8 @@ set updatetime=300
 set clipboard=unnamed,unnamedplus
 " ignorecase when searching
 set ignorecase " @n
+" highlight matches
+set hlsearch
 " If any capitals are used search by case
 set smartcase " @n
 " Infer the case
