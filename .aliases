@@ -8,6 +8,10 @@ alias extip="dig +short myip.opendns.com @resolver1.opendns.com" # Get External 
 alias fd='find . -type d -name' # Find Directories
 alias ff='find . -type f -name' # Find Files
 alias getpw="jq '.details.fields[] | select(.designation==\"password\").value'" # Get Password from JSON
+alias gst='git status'
+alias gs='git status --short'
+alias gp='git push'
+alias gb='git br'
 alias gitup="git push --set-upstream origin" # Push to Origin
 alias grep='grep --color' # Colorize grep
 alias help='man' # Man pages
