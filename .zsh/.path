@@ -16,5 +16,6 @@ path+=("/usr/local/bin")
 path+=("/usr/local/sbin")
 path+=("/usr/sbin")
 # path+=("/usr/local/opt/postgresql@12/bin")
+path+=("/opt/homebrew/opt/postgresql@12/bin/pg_dump")
 path+=("/opt/homebrew/opt/postgresql@12/bin")
 export PATH
