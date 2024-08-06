@@ -114,14 +114,17 @@ map f <Plug>Sneak_s
 "  to put the text they delete in the default register.
 "  Note that this means e.g. "ad won't copy the text into
 "  register a anymore.  You have to explicitly yank it."}}}
-nnoremap d "_d
-vnoremap d "_d
-nnoremap D "_D
-vnoremap D "_D
-nnoremap c "_c
-vnoremap c "_c
-nnoremap C "_C
-vnoremap C "_C
+"
+"  KEVIN CHANGE 2024-08-05 Can't live without content being in default register to paste elsewhere. #quality-of-life
+"
+" nnoremap d "_d
+" vnoremap d "_d
+" nnoremap D "_D
+" vnoremap D "_D
+" nnoremap c "_c
+" vnoremap c "_c
+" nnoremap C "_C
+" vnoremap C "_C
 " Remap H and L to start and end of the line
 nnoremap H ^
 nnoremap L $
@@ -278,9 +281,28 @@ function! NumberOffToggle()
     :exec &nu==1 ? "se nu!" : "se nu"
 endfunction
 
- "C-n swap relative number
-nnoremap <silent> <Leader>n :call NumberToggle()<CR>
-nnoremap <silent> <Leader>N :call NumberOffToggle()<CR>
+" C-n swap relative number
+"
+" KEVIN Changed 24-08-05
+"   from n to num
+"   and N to NUM
+"   to allow nerdtree to work with default bindings
+nnoremap <silent> <Leader>num :call NumberToggle()<CR>
+nnoremap <silent> <Leader>NUM :call NumberOffToggle()<CR>
+
+" 24-08-05 NERDTree bindings
+" Suggestions from github page
+" nnoremap <leader>n :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-t> :NERDTreeToggle<CR>
+" nnoremap <C-f> :NERDTreeFind<CR>
+
+" I just want the toggle for now
+nnoremap <leader>n :NERDTreeToggle<CR>
+
+" Start NERDTree (on vim opening) and put the cursor back in the other window.
+" autocmd VimEnter * NERDTree | wincmd p
+
 "===============================================================================
 " CODE_FOLDING
 "===============================================================================

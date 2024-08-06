@@ -39,6 +39,7 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'nsf/gocode'
 Plugin 'machakann/vim-sandwich'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'preservim/nerdtree'
 
 call vundle#end()
 filetype on
